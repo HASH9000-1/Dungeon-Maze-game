@@ -1,0 +1,65 @@
+
+body {
+    background-color: #1a1a1a;
+    font-family: 'MedievalSharp', cursive;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('assets/stone-wall.jpg'); /* Dungeon wall texture */
+    background-size: cover;
+}
+
+#game-container {
+    display: grid;
+    grid-template-rows: repeat(5, 60px);
+    grid-template-columns: repeat(5, 60px);
+    gap: 3px;
+    border: 3px solid #4d4d4d;
+    padding: 10px;
+    background-color: #333;
+    box-shadow: 0 0 10px #000;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.wall {
+    background-color: #4d4d4d;
+    background-image: url('assets/stone-wall.jpg'); /* Dungeon wall texture */
+    background-size: cover;
+}
+
+.path {
+    background-color: #2e2e2e;
+}
+
+.player {
+    background-image: url('assets/peasant.png'); /* Peasant character icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.exit {
+    background-image: url('assets/exit-door.png'); /* Exit door image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.torch {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-image: url('assets/torch-flame.gif'); /* Animated torch */
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 10px;
+    left: 10px;
+}
